@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>City Care Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#f4f9ff;}
+
+header{
+background:#0077b6;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+nav ul{list-style:none;}
+nav ul li{display:inline;margin-left:20px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+
+.emergency{
+background:red;
+color:white;
+text-align:center;
+padding:8px;
+font-weight:bold;
+}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3') no-repeat center/cover;
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h2{font-size:40px;text-shadow:2px 2px 5px black;}
+
+section{padding:60px 20px;text-align:center;}
+h2{margin-bottom:30px;color:#0077b6;}
+
+.card-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+form{max-width:400px;margin:auto;}
+form input, form select{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+}
+
+form button{
+width:100%;
+padding:10px;
+background:#0077b6;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+#successMsg{
+color:green;
+font-weight:bold;
+margin-top:10px;
+}
+
+.faq-item{
+background:white;
+margin:10px auto;
+max-width:600px;
+padding:15px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:left;
+}
+
+.chatbot{
+position:fixed;
+bottom:20px;
+right:20px;
+width:250px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:10px;
+}
+
+.chatbot input{
+width:100%;
+padding:5px;
+}
+
+footer{
+background:#023e8a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+@media(max-width:768px){
+nav ul li{display:block;margin:10px 0;}
+.hero h2{font-size:25px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="emergency">
+🚑 Emergency? Call Now: +91 98765 43210
+</div>
+
+<header>
+<h1>🏥 City Care Hospital</h1>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#departments">Departments</a></li>
+<li><a href="#doctors">Doctors</a></li>
+<li><a href="#appointment">Appointment</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="admin.html">Admin</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Advanced Healthcare with Compassion</h2>
+<p>24/7 Emergency | ICU | Pharmacy | Lab</p>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Providing world-class medical services with expert doctors and modern equipment.</p>
+</section>
+
+<section id="departments">
+<h2>Departments</h2>
+<div class="card-container">
+<div class="card"><h3>Cardiology</h3></div>
+<div class="card"><h3>Neurology</h3></div>
+<div class="card"><h3>Orthopedics</h3></div>
+<div class="card"><h3>Pediatrics</h3></div>
+</div>
+</section>
+
+<section id="doctors">
+<h2>Our Doctors</h2>
+<div class="card-container">
+<div class="card"><h3>Dr. Arjun Kumar</h3><p>Cardiologist</p></div>
+<div class="card"><h3>Dr. Priya Sharma</h3><p>Neurologist</p></div>
+<div class="card"><h3>Dr. Ravi Menon</h3><p>Orthopedic Surgeon</p></div>
+</div>
+</section>
+
+<section id="appointment">
+<h2>Book Appointment</h2>
+<form onsubmit="book(event)">
+<input type="text" placeholder="Patient Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Select Department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopedics</option>
+<option>Pediatrics</option>
+</select>
+
+<button type="submit">Book Now</button>
+<p id="successMsg"></p>
+</form>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<div id="faqContainer"></div>
+</section>
+
+<footer>
+<p>© 2026 City Care Hospital | All Rights Reserved</p>
+</footer>
+
+<div class="chatbot">
+<p><b>Chat with us</b></p>
+<input type="text" id="chatInput" placeholder="Type message..." onkeydown="chat(event)">
+<p id="chatResponse"></p>
+</div>
+
+<script>
+
+function book(e){
+e.preventDefault();
+document.getElementById("successMsg").innerText="Appointment booked successfully!";
+}
+
+/* LOAD FAQ FROM JSON */
+document.addEventListener("DOMContentLoaded", function(){
+
+fetch("faq.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const container = document.getElementById("faqContainer");
+
+    data.forEach((item, index) => {
+
+      const div = document.createElement("div");
+      div.classList.add("faq-item");
+
+      div.innerHTML = `
+        <h4 onclick="toggleAnswer(${index})" style="cursor:pointer;">
+          ${item.question}
+        </h4>
+        <p id="faqAnswer${index}" style="display:none;margin-top:10px;">
+          ${item.answer}
+        </p>
+      `;
+
+      container.appendChild(div);
+
+    });
+
+  })
+  .catch(error => console.log("FAQ Load Error:", error));
+
+});
+
+function toggleAnswer(index){
+  const ans = document.getElementById("faqAnswer" + index);
+  ans.style.display = ans.style.display === "none" ? "block" : "none";
+}
+
+/* FIXED CHATBOT */
+
+function chat(e){
+
+if(e.key === "Enter"){
+
+    let inputBox = document.getElementById("chatInput");
+    let msg = inputBox.value.toLowerCase().trim();
+
+    if(msg === "") return;
+
+    let response = "Please contact reception for further details.";
+
+    /* Greeting */
+    if(msg === "hi" || msg === "hello" || msg === "hey"){
+        response = "Hello 👋 Welcome to City Care Hospital! How can I help you?";
+    }
+
+    /* Timing */
+    else if(msg.includes("timing") || msg.includes("hours") || msg.includes("time") || msg.includes("opd")){
+        response = "OPD timings are 9 AM to 6 PM. Visiting hours are 9 AM to 7 PM.";
+    }
+
+    /* Lab report */
+    else if(msg.includes("lab") || msg.includes("report")){
+        response = "Most lab reports are ready within 24 hours.";
+    }
+
+    /* Specialist doctor */
+    else if(msg.includes("specialist") || msg.includes("doctor")){
+        response = "Specialist doctors are available Monday to Saturday.";
+    }
+
+    /* Emergency */
+    else if(msg.includes("emergency")){
+        response = "🚑 Call +91 98765 43210 immediately!";
+    }
+
+    /* Appointment */
+    else if(msg.includes("appointment")){
+        response = "You can book appointment using the form above.";
+    }
+
+    document.getElementById("chatResponse").innerText = response;
+    inputBox.value = "";
+}
+}
+</script>
+
+</body>
+</html>

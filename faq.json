@@ -1,0 +1,244 @@
+[
+  {
+    "question": "Do you offer telemedicine consultations?",
+    "answer": "Yes, we offer telemedicine consultations so you can consult doctors online."
+  },
+  {
+    "question": "Are COVID-19 tests available?",
+    "answer": "Yes, RT-PCR and rapid antigen tests are available at our lab."
+  },
+  {
+    "question": "How do I book an appointment?",
+    "answer": "You can book an appointment using the form available on our website."
+  },
+  {
+    "question": "What are the hospital visiting hours?",
+    "answer": "Visiting hours are from 9 AM to 7 PM daily."
+  },
+  {
+    "question": "Is emergency service available 24/7?",
+    "answer": "Yes, our emergency services are available 24 hours a day."
+  },
+  {
+    "question": "Can I get lab reports online?",
+    "answer": "Yes, lab reports can be accessed online through our patient portal."
+  },
+  {
+    "question": "Do you accept health insurance?",
+    "answer": "Yes, we accept most major health insurance providers."
+  },
+  {
+    "question": "Do you provide maternity services?",
+    "answer": "Yes, we provide complete maternity and neonatal care services."
+  },
+  {
+    "question": "Is there an ICU facility available?",
+    "answer": "Yes, we have a fully equipped ICU with 24/7 monitoring."
+  },
+  {
+    "question": "Do you offer health checkup packages?",
+    "answer": "Yes, we offer various health checkup packages at affordable prices."
+  },
+  {
+    "question": "Can I reschedule my appointment?",
+    "answer": "Yes, appointments can be rescheduled by contacting reception."
+  },
+  {
+    "question": "Do you provide pediatric services?",
+    "answer": "Yes, pediatric specialists are available for child healthcare."
+  },
+  {
+    "question": "Is parking available at the hospital?",
+    "answer": "Yes, free parking is available for patients and visitors."
+  },
+  {
+    "question": "Do you have pharmacy services?",
+    "answer": "Yes, our in-house pharmacy is open daily."
+  },
+  {
+    "question": "How long does it take to get test reports?",
+    "answer": "Most lab reports are ready within 24 to 48 hours."
+  }
+  ,
+{
+  "question": "Do you offer online doctor consultations?",
+  "answer": "Yes, online video consultations are available through our website."
+},
+{
+  "question": "Can I download my medical records online?",
+  "answer": "Yes, registered patients can download their medical records from our portal."
+},
+{
+  "question": "Do you provide ambulance services?",
+  "answer": "Yes, 24/7 ambulance services are available."
+},
+{
+  "question": "Is cashless treatment available?",
+  "answer": "Yes, cashless treatment is available for approved insurance providers."
+},
+{
+  "question": "Do you have a blood bank facility?",
+  "answer": "Yes, we have a licensed blood bank available 24/7."
+},
+{
+  "question": "Are specialist doctors available on weekends?",
+  "answer": "Yes, select specialists are available on Saturdays."
+},
+{
+  "question": "Do you offer mental health counseling?",
+  "answer": "Yes, we provide professional psychological and psychiatric counseling."
+},
+{
+  "question": "What safety measures are followed in the hospital?",
+  "answer": "We follow strict hygiene, sanitization, and infection control protocols."
+},
+{
+  "question": "Do you provide vaccination services?",
+  "answer": "Yes, we provide routine and special vaccinations for all age groups."
+},
+{
+  "question": "Can I cancel my appointment online?",
+  "answer": "Yes, appointments can be cancelled through the website."
+},
+{
+  "question": "Is there a separate emergency entrance?",
+  "answer": "Yes, emergency patients have a dedicated entrance."
+},
+{
+  "question": "Do you provide physiotherapy services?",
+  "answer": "Yes, we offer advanced physiotherapy and rehabilitation services."
+},
+{
+  "question": "Are health checkup packages customizable?",
+  "answer": "Yes, health packages can be customized based on patient needs."
+},
+{
+  "question": "Do you provide home sample collection?",
+  "answer": "Yes, lab technicians can collect samples from your home."
+},
+{
+  "question": "Is ICU available for critical patients?",
+  "answer": "Yes, ICU beds are available with advanced life-support systems."
+},
+{
+  "question": "Do you offer diabetic care programs?",
+  "answer": "Yes, we have specialized diabetic management programs."
+},
+{
+  "question": "Can I get second medical opinions?",
+  "answer": "Yes, our specialists provide second opinion consultations."
+},
+{
+  "question": "Do you provide cardiology services?",
+  "answer": "Yes, complete heart care services are available."
+},
+{
+  "question": "Are MRI and CT scans available?",
+  "answer": "Yes, advanced MRI and CT scan facilities are available."
+},
+{
+  "question": "Is emergency surgery available?",
+  "answer": "Yes, emergency surgical services are available 24/7."
+},
+{
+  "question": "Do you provide dialysis services?",
+  "answer": "Yes, dialysis services are available under expert supervision."
+},
+{
+  "question": "Is there a pediatric ICU?",
+  "answer": "Yes, we have a dedicated pediatric ICU."
+},
+{
+  "question": "Do you provide orthopedic surgery?",
+  "answer": "Yes, advanced orthopedic surgical treatments are available."
+},
+{
+  "question": "Do you offer maternity packages?",
+  "answer": "Yes, comprehensive maternity packages are available."
+},
+{
+  "question": "Can I pay hospital bills online?",
+  "answer": "Yes, online payment options are available."
+},
+{
+  "question": "Is there a cafeteria in the hospital?",
+  "answer": "Yes, a hygienic cafeteria is available for visitors and patients."
+},
+{
+  "question": "Do you provide cancer treatment?",
+  "answer": "Yes, oncology services including chemotherapy are available."
+},
+{
+  "question": "Are private rooms available?",
+  "answer": "Yes, private and deluxe rooms are available."
+},
+{
+  "question": "Do you offer preventive health screenings?",
+  "answer": "Yes, we offer preventive health screening programs."
+},
+{
+  "question": "Is the hospital NABH accredited?",
+  "answer": "Yes, our hospital follows NABH quality standards."
+}
+,
+{
+  "question": "When will my lab reports be ready?",
+  "answer": "Most basic lab reports are available within 24 hours."
+},
+{
+  "question": "How can I collect my lab report?",
+  "answer": "You can collect it from the lab counter or download it online."
+},
+{
+  "question": "Do you provide home blood test services?",
+  "answer": "Yes, we provide home sample collection services."
+},
+{
+  "question": "Are specialist doctors available daily?",
+  "answer": "Yes, specialist doctors are available from Monday to Saturday."
+},
+{
+  "question": "How do I consult a specialist doctor?",
+  "answer": "You can book an appointment online or at the reception."
+},
+{
+  "question": "Do I need a referral to see a specialist?",
+  "answer": "No, you can directly book an appointment with a specialist."
+},
+{
+  "question": "What are OPD timings?",
+  "answer": "OPD is open from 9 AM to 6 PM."
+},
+{
+  "question": "Is ultrasound available?",
+  "answer": "Yes, ultrasound scanning services are available."
+},
+{
+  "question": "Is X-ray facility available?",
+  "answer": "Yes, digital X-ray services are available."
+},
+{
+  "question": "Do you provide ECG tests?",
+  "answer": "Yes, ECG tests are available in the cardiology department."
+},
+{
+  "question": "How much does a basic health checkup cost?",
+  "answer": "Basic health checkup packages start at affordable prices. Please contact reception for details."
+},
+{
+  "question": "Is pharmacy available inside the hospital?",
+  "answer": "Yes, our pharmacy is open 24/7."
+},
+{
+  "question": "Can I meet the doctor without appointment?",
+  "answer": "Walk-in consultations are allowed based on doctor availability."
+},
+{
+  "question": "Do you treat children?",
+  "answer": "Yes, pediatric specialists are available."
+},
+{
+  "question": "Do you have female doctors available?",
+  "answer": "Yes, experienced female doctors are available in multiple departments."
+}
+]
